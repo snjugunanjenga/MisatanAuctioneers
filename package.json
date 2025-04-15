@@ -1,0 +1,13 @@
+{
+    "name": "mistan-auctioneers",
+    "version": "1.0.0",
+    "description": "A multipage responsive website for Mistan Auctioneers showcasing HTML5, CSS3, and JavaScript.",
+    "main": "index.html",
+    "scripts": {
+      "start": "live-server --open=./index.html"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "dependencies": {}
+  }
+  

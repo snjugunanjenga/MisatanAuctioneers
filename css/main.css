@@ -1,0 +1,192 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Header & Navigation */
+  header {
+    background-color: #004080;
+    padding: 15px 0;
+    color: #fff;
+  }
+  header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('../assets/images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  .hero .hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+  }
+  .hero .btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  .hero .btn:hover {
+    background-color: #cc5200;
+  }
+  
+  /* Mission & Vision Section */
+  .mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+  }
+  .mission-vision article {
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Core Services Section */
+  .core-services {
+    text-align: center;
+    padding: 40px 0;
+  }
+  .services-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .service-item {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  .service-item img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  /* About Section (if any additional about styles needed) */
+  
+  /* Calendar & Blog Sections */
+  .calendar, .blog-posts {
+    padding: 40px 20px;
+  }
+  .calendar ul, .blog-posts article {
+    margin: 20px 0;
+  }
+  .blog-posts article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Form */
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  form button {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  form button:hover {
+    background-color: #003366;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .mission-vision {
+      flex-direction: column;
+      align-items: center;
+    }
+    .mission-vision article {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    .services-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+    .service-item {
+      width: 80%;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav ul li {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Example CSS Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+    .fade-in {
+        animation: fadeIn 1s ease-in-out;
+    }  
