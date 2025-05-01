@@ -4,47 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mistan Auctioneers | Blog</title>
+  <!-- Link Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link Custom CSS -->
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-  <header>
+  <!-- Header -->
+  <header class="bg-dark text-white py-3">
     <div class="container">
-      <h1>Mistan Auctioneers</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="auction-calendar.html">Auction Calendar</a></li>
-          <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 class="h3">Mistan Auctioneers</h1>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link text-white">About Us</a></li>
+            <li class="nav-item"><a href="services.html" class="nav-link text-white">Services</a></li>
+            <li class="nav-item"><a href="auction-calendar.html" class="nav-link text-white">Auction Calendar</a></li>
+            <li class="nav-item"><a href="blog.html" class="nav-link text-white active">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="blog-posts">
-      <h2>Latest Auction News</h2>
-      <article class="post">
-        <h3>Market Trends in High-End Auctions</h3>
-        <p>Discover the insights and trends shaping today’s auction market at Mistan Auctioneers.</p>
-        <a href="#">Read More</a>
-      </article>
-      <article class="post">
-        <h3>Behind the Scenes at Mistan</h3>
-        <p>An exclusive look into the meticulous planning and expertise behind every auction event.</p>
-        <a href="#">Read More</a>
-      </article>
-    </section>
+  <!-- Main Content -->
+  <main class="py-5">
+    <div class="container">
+      <section class="blog-posts">
+        <h2 class="text-center mb-4">Latest Auction News</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <article class="post card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title">Market Trends in High-End Auctions</h3>
+                <p class="card-text">Discover the insights and trends shaping today’s auction market at Mistan Auctioneers.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 mb-4">
+            <article class="post card shadow-sm">
+              <div class="card-body">
+                <h3 class="card-title">Behind the Scenes at Mistan</h3>
+                <p class="card-text">An exclusive look into the meticulous planning and expertise behind every auction event.</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2025 Mistan Auctioneers. All Rights Reserved.</p>
     <p>Contact: info@mistanauctioneers.com</p>
   </footer>
 
+  <!-- Link Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Link the Main JavaScript -->
   <script src="js/main.js"></script>
 </body>
 </html>
